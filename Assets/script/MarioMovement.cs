@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class MarioMovement : MonoBehaviour
@@ -74,4 +75,8 @@ public class MarioMovement : MonoBehaviour
         Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
     }
 
+    public void Loadscene() 
+    {
+        SceneManager.LoadScene("practica 3");
+    }
 }
