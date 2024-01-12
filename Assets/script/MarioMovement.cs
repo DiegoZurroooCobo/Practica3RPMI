@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,12 +10,12 @@ using UnityEngine.SceneManagement;
 public class MarioMovement : MonoBehaviour
 {
     public KeyCode rightKey, leftKey, jumpkey;
-    public float speed, jumpforce, rayDistance;
-    public LayerMask groundMask;
+    public float speed, jumpForce, rayDistance;
+    public LayerMask groundMask; // Capa de colisiones 
 
     private Rigidbody2D rb;
     private Vector2 dir;
-    private bool isjumping = false;
+    private bool isjumping;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,19 +25,19 @@ public class MarioMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dir = new Vector2 (0, 0);
+        dir = new Vector2(0, 0);
 
-        if(Input.GetKey(rightKey)) 
+        if (Input.GetKey(rightKey))
         {
-           dir = new Vector2(1, 0);
+            dir = new Vector2(1, 0);
         }
-        else if(Input.GetKey(leftKey)) 
+        else if (Input.GetKey(leftKey))
         {
-           dir = new Vector2(-1, 0);
+            dir = new Vector2(-1, 0);
         }
 
-        if(Input.GetKeyDown(jumpkey) && IsGrounded()) 
-        { 
+        if (Input.GetKey(jumpkey))
+        {
             isjumping = true;
         }
     }
@@ -44,29 +45,34 @@ public class MarioMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = dir * speed;
-           
-        
-        if(isjumping) 
+
+        isjumping = false;
+        if (isjumping && IsGrounded())
         {
-            rb.AddForce(new Vector2(0, jumpforce * rb.gravityScale));
-            isjumping = false;
-        } 
+            rb.AddForce(Vector2.up * jumpForce * rb.gravityScale, ForceMode2D.Impulse);
+        }
+        
+        print(IsGrounded());
+
+        if( dir != Vector2.zero ) 
+        { 
+            float currentYnevl = rb.velocity.y;
+            Vector2 nVel = dir * speed;
+            nVel.y = currentYnevl;
+
+            rb.velocity = nVel;
+        }
     }
 
-    private bool IsGrounded() 
+    private bool IsGrounded()
     {
-        RaycastHit2D[] raycastHits = Physics2D.RaycastAll(transform.position, Vector2.down, rayDistance);
-        
-        foreach(RaycastHit2D raycastHit in raycastHits) 
+        RaycastHit2D colission = Physics2D.Raycast(transform.position, Vector2.down, rayDistance, groundMask);
+        //Lanza un rayo desde el centro del personaje hacia abajo. El rayo llega hasta ala distancia definicda. solo va a detectar colisiones si se encuentran dentro del Raycast
+        if (colission)
         {
-            //if(raycastHit.collider.gameObject.CompareTag("ground"))
-            //if(raycastHit.collider.gameObject.layer == (groundMask))
-            {
-                return true;
-            }
+            return true;
         }
-
-        return false;   
+        return false;
     }
 
     private void OnDrawGizmos()
@@ -75,7 +81,7 @@ public class MarioMovement : MonoBehaviour
         Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
     }
 
-    public void Loadscene() 
+    public void Loadscene()
     {
         SceneManager.LoadScene("practica 3");
     }

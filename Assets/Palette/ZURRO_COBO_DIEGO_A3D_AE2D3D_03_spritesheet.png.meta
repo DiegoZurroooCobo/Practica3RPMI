@@ -1,0 +1,1812 @@
+fileFormatVersion: 2
+guid: f2bb2b7da3f387e41aa4c5cbcb249fea
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 526
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c3fa66058297d4d927dda587c4943d
+      internalID: -1535480248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 526
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af53b028b59b6e47a9587dac8aeb15f
+      internalID: 261460639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 526
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed72ca64aed731b4cb3e11433cc6f54a
+      internalID: 1588513731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 526
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0853bd00a84085b428a0924e6a830500
+      internalID: -1634614106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 526
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3bd9ebf84804842855ab77ace9e12f
+      internalID: -1069426430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 526
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fee39eb4c1016443b0b8d9b7e73e80e
+      internalID: -1723040519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 526
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d5d8c10642b8f4195cf96f9ebcfa79
+      internalID: -1817922429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 526
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6161e9177c5334c88c98b2fbfc17ef
+      internalID: -1684406643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 462
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e274bda029c27940af14eafcafba363
+      internalID: 737328408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 462
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e72c61c4c7bdbb4e8918be4ed435262
+      internalID: -2044689815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 462
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aec127e369a61446ada945b4706821b
+      internalID: 334083448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 462
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac30f55518d1ab41bdda5275ee303d0
+      internalID: 1138984763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 462
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6beb5ce67ff28498f65fbe653f7146
+      internalID: 921763471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 462
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6cd5a0231070034d969274432cb2d7b
+      internalID: -2052308733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 462
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ccca9aeffec5e469883fb022f70ba0
+      internalID: 1135060839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 462
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83e74635e1a965488c6b50451bee79d
+      internalID: -1862815614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 398
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9b5637d1963b24cbbfa6df732598ba
+      internalID: -1841836029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 398
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff41c9bf48c7bb40ab3b907b12063a7
+      internalID: -2078106913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 398
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f102354e519b124d8e13700f3afb0ea
+      internalID: 867804597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 398
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbfc7f5cf31cd048a7354471eef78b0
+      internalID: -2009750775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 398
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94c91d452d17bf47a4ca2a286e84c7b
+      internalID: -234183550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 398
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb61c2540c53ff4481df717f8474ffc
+      internalID: 1556632543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 398
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2e80f5a4f39dc44871479780740d3a
+      internalID: -2016107312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 398
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c15dc535c85c443b82dbdee23ab5dc
+      internalID: -1521697901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 398
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6565e601ce7cc6c42aa28d5895112405
+      internalID: -1454452783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 398
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1feb67db83208c43a53c2715fb924af
+      internalID: 1036871245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 398
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f641099f18b9694cbb392f0f2a89f60
+      internalID: -1721432457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 398
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff10173aa49c3c24b864f5f73dda10d9
+      internalID: 250947013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 398
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c07c8264e649c64d909bd274ff105a7
+      internalID: -1448306503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 398
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd99bc6387e1e324097257095ecb83ea
+      internalID: -200271583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 398
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa2d6cef32a0b94d9d41375782d527c
+      internalID: 1221531874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 334
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdf82101b2fda74cb556bd62ea2bb9d
+      internalID: 1535086638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 334
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8259c11dc0bbd4140b5dab90adf572a9
+      internalID: 1690148974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 334
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0dcfd47b211664aacb67b056dbe939
+      internalID: 880449729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 334
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61855c8c9b4e794bb76b23961b70127
+      internalID: 538121097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 334
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a064faa6255f8ad4084916b3ad098ed8
+      internalID: 97652234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 334
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d9e371a574a2e438ee44ccf889cd80
+      internalID: -367721442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 334
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17609c28d0be284ba5c0ac97f8589b4
+      internalID: 1391498548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 334
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6368ed2865bcdc94f80ce53470e00a96
+      internalID: 1359342876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 334
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6758f4658ce26da42b1acd6bdf751948
+      internalID: 685236321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 334
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fffb9449927ed74db91abe4dc5cd814
+      internalID: -2137536090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 334
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42ebd832987c66418293f9d277dfea6
+      internalID: 1605893475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 334
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5b0f4c20dc6d046a05930e22aa103c
+      internalID: 661585630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 334
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109e78cffc05c8e41901d70739187a1d
+      internalID: -772010148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 334
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135e6c042e87abc459c18e9af2e3c78d
+      internalID: -789517855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 334
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573a76a04ec2da8469b3a96f593a4b28
+      internalID: -555970866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 334
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24727692c165efc4189c6836b5375ca5
+      internalID: 91328024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 270
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475f7fdbe82de464cb1bc34845fa9496
+      internalID: 1449615378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 270
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bdcead13919c3541adb202efaf06f3b
+      internalID: -1247772304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 270
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026947c73a6fa8043a508845f40b70ed
+      internalID: -1657130373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 270
+        width: 39
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90bb9c0abe1e0b44ea7f0521faa578f6
+      internalID: -1089330009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 270
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c34f5cb78d43ee4b844933f5f963035
+      internalID: -378433627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 270
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d40dc553200b4c42afe686ba66a74bd
+      internalID: 1422112859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 206
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53de4be4d8b1ade48b7b7f89376e131f
+      internalID: -700747049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 206
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b71b4a721673f458a5da98e8f54563
+      internalID: -1738546232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 206
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99b4706dcbf0814688f2ffacc2074ff
+      internalID: 1481311993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 206
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7af1e532b28e7d46acabf6708f50209
+      internalID: -1255661970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 206
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2dd8ff362153f498242dc3faff9710
+      internalID: -1558741848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 206
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a23d2f594a7c244d8af6f62eaf9c9f9
+      internalID: -589387133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 142
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10172817740e8814e849a37724083562
+      internalID: -99996898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 142
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fce4568b26d11499ae24c7c2237b9c
+      internalID: 1597919096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 142
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9503537926fab5440bdc1173fb7e606e
+      internalID: -1789866576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 142
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58de3554d9570b84ca0728a35efa3006
+      internalID: -405858715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 142
+        width: 43
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dce6ee418d0144f995a1bc7add2dcf
+      internalID: -1993128531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 142
+        width: 47
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642ab13393be26c45b3638cec9a361fb
+      internalID: -1693727494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 142
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ff4e5a38cf22e4793a537a95c44f8f
+      internalID: 1723675061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 78
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4804852f82b2803428d0344160f06b13
+      internalID: -1052305264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 78
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12a98f30b0cc114ba8a567d404418d5
+      internalID: 1925574681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 78
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80bb4c6a6a5a5745b3a63d38fb8fac5
+      internalID: 2052937121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 78
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd57d0c7b2bddf4dac396cf13e75108
+      internalID: 1362524790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 78
+        width: 49
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b58375bc7a87204d8d8d5841545a022
+      internalID: -245234465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 78
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0532ad4353f30db448073284594255bb
+      internalID: -1720192844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 78
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e6677f33c20bd478fb390ced5e7a90
+      internalID: 1214277915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 78
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2e229c1b3259942be84fcebe85c56d
+      internalID: 1219002515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 78
+        width: 45
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a18fc6140404f443abf45a79636c946
+      internalID: -1040848130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 78
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc47783ed892204c9f751f5afece022
+      internalID: 37019081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_0: -1535480248
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_1: 261460639
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_10: 334083448
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_11: 1138984763
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_12: 921763471
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_13: -2052308733
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_14: 1135060839
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_15: -1862815614
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_16: -1841836029
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_17: -2078106913
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_18: 867804597
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_19: -2009750775
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_2: 1588513731
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_20: -234183550
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_21: 1556632543
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_22: -2016107312
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_23: -1521697901
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_24: -1454452783
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_25: 1036871245
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_26: -1721432457
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_27: 250947013
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_28: -1448306503
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_29: -200271583
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_3: -1634614106
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_30: 1221531874
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_31: 1535086638
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_32: 1690148974
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_33: 880449729
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_34: 538121097
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_35: 97652234
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_36: -367721442
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_37: 1391498548
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_38: 1359342876
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_39: 685236321
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_4: -1069426430
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_40: -2137536090
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_41: 1605893475
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_42: 661585630
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_43: -772010148
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_44: -789517855
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_45: -555970866
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_46: 91328024
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_47: 1449615378
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_48: -1247772304
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_49: -1657130373
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_5: -1723040519
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_50: -1089330009
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_51: -378433627
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_52: 1422112859
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_53: -700747049
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_54: -1738546232
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_55: 1481311993
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_56: -1255661970
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_57: -1558741848
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_58: -589387133
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_59: -99996898
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_6: -1817922429
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_60: 1597919096
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_61: -1789866576
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_62: -405858715
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_63: -1993128531
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_64: -1693727494
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_65: 1723675061
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_66: -1052305264
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_67: 1925574681
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_68: 2052937121
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_69: 1362524790
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_7: -1684406643
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_70: -245234465
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_71: -1720192844
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_72: 1214277915
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_73: 1219002515
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_74: -1040848130
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_75: 37019081
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_8: 737328408
+      ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_9: -2044689815
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
