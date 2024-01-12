@@ -36,6 +36,7 @@ public class MarioMovement : MonoBehaviour
             dir = new Vector2(-1, 0);
         }
 
+        isjumping = false;
         if (Input.GetKey(jumpkey))
         {
             isjumping = true;
@@ -44,9 +45,8 @@ public class MarioMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = dir * speed;
+        
 
-        isjumping = false;
         if (isjumping && IsGrounded())
         {
             rb.AddForce(Vector2.up * jumpForce * rb.gravityScale, ForceMode2D.Impulse);
