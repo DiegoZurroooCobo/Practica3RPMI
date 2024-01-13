@@ -45,14 +45,12 @@ public class MarioMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
-
         if (isjumping && IsGrounded())
         {
+            rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(Vector2.up * jumpForce * rb.gravityScale, ForceMode2D.Impulse);
         }
         
-        print(IsGrounded());
 
         if( dir != Vector2.zero ) 
         { 
@@ -67,7 +65,7 @@ public class MarioMovement : MonoBehaviour
     private bool IsGrounded()
     {
         RaycastHit2D colission = Physics2D.Raycast(transform.position, Vector2.down, rayDistance, groundMask);
-        //Lanza un rayo desde el centro del personaje hacia abajo. El rayo llega hasta ala distancia definicda. solo va a detectar colisiones si se encuentran dentro del Raycast
+        //Lanza un rayo desde el centro del personaje hacia abajo. El rayo llega hasta la distancia definida. solo va a detectar colisiones si se encuentran dentro del Raycast
         if (colission)
         {
             return true;
@@ -81,7 +79,7 @@ public class MarioMovement : MonoBehaviour
         Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
     }
 
-    public void Loadscene()
+    public void Loadscene() // al entratr en contacto con la death zone, vuelve a cargar la escena 
     {
         SceneManager.LoadScene("practica 3");
     }
