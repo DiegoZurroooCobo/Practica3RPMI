@@ -10,7 +10,7 @@ public class DeathZone : MonoBehaviour
         MarioMovement playerDeath = collision.GetComponent<MarioMovement>();
         if(playerDeath != null ) 
         { 
-            playerDeath.Loadscene();
+            playerDeath.DeathZone();
         }
 
     }

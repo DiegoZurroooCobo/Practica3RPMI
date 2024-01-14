@@ -79,7 +79,12 @@ public class MarioMovement : MonoBehaviour
         Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
     }
 
-    public void Loadscene() // al entratr en contacto con la death zone, vuelve a cargar la escena 
+    public void DeathZone() // al entratr en contacto con la death zone, vuelve a cargar la escena 
+    {
+        SceneManager.LoadScene("practica 3");
+    }
+
+    public void Changescene() 
     {
         SceneManager.LoadScene("practica 3");
     }
