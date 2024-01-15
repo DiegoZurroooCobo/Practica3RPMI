@@ -14,12 +14,16 @@ public class MarioMovement : MonoBehaviour
     public LayerMask groundMask; // Capa de colisiones 
 
     private Rigidbody2D rb;
+    private SpriteRenderer rSprite;
     private Vector2 dir;
     private bool isjumping;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rSprite = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,10 +33,12 @@ public class MarioMovement : MonoBehaviour
 
         if (Input.GetKey(rightKey))
         {
+            rSprite.flipX = false;
             dir = new Vector2(1, 0);
         }
         else if (Input.GetKey(leftKey))
         {
+            rSprite.flipX = true;
             dir = new Vector2(-1, 0);
         }
 
@@ -40,6 +46,15 @@ public class MarioMovement : MonoBehaviour
         if (Input.GetKey(jumpkey))
         {
             isjumping = true;
+        }
+
+        if (dir != Vector2.zero)
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        else 
+        {
+            animator.SetBool("IsWalking", false);
         }
     }
 
