@@ -18,6 +18,8 @@ public class MarioMovement : MonoBehaviour
     private Vector2 dir;
     private bool isjumping;
     private Animator animator;
+    private float currentTime = 0;
+    private float MaxTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,7 +49,7 @@ public class MarioMovement : MonoBehaviour
         {
             isjumping = true;
         }
-
+    
         if (dir != Vector2.zero)
         {
             animator.SetBool("IsWalking", true);
@@ -56,16 +58,29 @@ public class MarioMovement : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
         }
+
+        currentTime += Time.deltaTime;
+        if(currentTime > MaxTime) 
+        {
+            animator.SetBool("TimeWaiting", true);
+            MaxTime = 15f;
+        }
+
+        else
+        {
+            animator.SetBool("TimeWaiting", false);
+        }
     }
 
     private void FixedUpdate()
     {
         if (isjumping && IsGrounded())
         {
+            animator.SetBool("IsJumping", true);
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(Vector2.up * jumpForce * rb.gravityScale, ForceMode2D.Impulse);
         }
-        
+
 
         if( dir != Vector2.zero ) 
         { 
@@ -74,6 +89,11 @@ public class MarioMovement : MonoBehaviour
             nVel.y = currentYnevl;
 
             rb.velocity = nVel;
+        }
+
+        else
+        {
+            animator.SetBool("IsJumping", false);
         }
     }
 

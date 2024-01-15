@@ -1390,8 +1390,8 @@ TextureImporter:
         y: 142
         width: 45
         height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1411,8 +1411,8 @@ TextureImporter:
         y: 142
         width: 45
         height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.579}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1428,12 +1428,12 @@ TextureImporter:
       name: ZURRO_COBO_DIEGO_A3D_AE2D3D_03_spritesheet_62
       rect:
         serializedVersion: 2
-        x: 267
+        x: 268
         y: 142
         width: 45
         height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.493415, y: 1.259}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1452,9 +1452,9 @@ TextureImporter:
         x: 331
         y: 141
         width: 43
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 1.79}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1474,8 +1474,8 @@ TextureImporter:
         y: 142
         width: 47
         height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 2.92}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1495,8 +1495,8 @@ TextureImporter:
         y: 142
         width: 19
         height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 2.63}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1516,8 +1516,8 @@ TextureImporter:
         y: 78
         width: 19
         height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5000004, y: 0.9959557}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1537,8 +1537,8 @@ TextureImporter:
         y: 78
         width: 21
         height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5077718, y: 0.9958748}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1558,8 +1558,8 @@ TextureImporter:
         y: 78
         width: 30
         height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5221476, y: 1.0125234}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1579,8 +1579,8 @@ TextureImporter:
         y: 78
         width: 47
         height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9837723}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1600,8 +1600,8 @@ TextureImporter:
         y: 78
         width: 49
         height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.99188}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1663,8 +1663,8 @@ TextureImporter:
         y: 78
         width: 45
         height: 59
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5147637, y: 0.15670957}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1684,8 +1684,8 @@ TextureImporter:
         y: 78
         width: 45
         height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.51864964, y: 0.1608}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
