@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MarioMovement : MonoBehaviour
 {
-    public KeyCode rightKey, leftKey, jumpkey;
+    public KeyCode rightKey, leftKey, jumpkey, attackKey, attackKey2;
     public float speed, jumpForce, rayDistance;
     public LayerMask groundMask; // Capa de colisiones 
 
@@ -58,6 +58,27 @@ public class MarioMovement : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
         }
+
+        if(Input.GetKey(attackKey)) 
+        {
+
+            animator.SetBool("IsAttacking", true);
+        }
+        else 
+        {
+            animator.SetBool("IsAttacking", false);
+        }
+        
+        if(Input.GetKey(attackKey2)) 
+        {
+
+            animator.SetBool("IsAttacking", true);
+        }
+        else 
+        {
+            animator.SetBool("IsAttacking", false);
+        }
+
 
         currentTime += Time.deltaTime;
         if(currentTime > MaxTime) 
