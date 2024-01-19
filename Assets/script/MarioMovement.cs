@@ -19,7 +19,7 @@ public class MarioMovement : MonoBehaviour
     private bool isjumping;
     private Animator animator;
     private float currentTime = 0;
-    private float MaxTime;
+    private float MaxTime = 15f;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,46 +62,32 @@ public class MarioMovement : MonoBehaviour
         if(Input.GetKey(attackKey)) 
         {
 
-            animator.SetBool("IsAttacking", true);
+            animator.Play("Attack_1");
         }
-        else 
-        {
-            animator.SetBool("IsAttacking", false);
-        }
-        
+      
         if(Input.GetKey(attackKey2)) 
         {
 
-            animator.SetBool("IsAttacking", true);
+            animator.Play("Attack_2");
         }
-        else 
-        {
-            animator.SetBool("IsAttacking", false);
-        }
-
 
         currentTime += Time.deltaTime;
         if(currentTime > MaxTime) 
         {
-            animator.SetBool("TimeWaiting", true);
-            MaxTime = 15f;
-        }
-
-        else
-        {
-            animator.SetBool("TimeWaiting", false);
+            animator.Play("Idle_2");
+            currentTime = 0; 
         }
     }
 
     private void FixedUpdate()
     {
+        print(IsGrounded());
         if (isjumping && IsGrounded())
         {
-            animator.SetBool("IsJumping", true);
+            animator.Play("Jumping");
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(Vector2.up * jumpForce * rb.gravityScale, ForceMode2D.Impulse);
         }
-
 
         if( dir != Vector2.zero ) 
         { 
@@ -112,10 +98,6 @@ public class MarioMovement : MonoBehaviour
             rb.velocity = nVel;
         }
 
-        else
-        {
-            animator.SetBool("IsJumping", false);
-        }
     }
 
     private bool IsGrounded()
