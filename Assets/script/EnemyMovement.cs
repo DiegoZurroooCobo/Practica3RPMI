@@ -18,17 +18,17 @@ public class EnemyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         Movement();
-        target = Player.transform.position;
+        target = Player.transform.position; //Asigna como objetivo la posicion del jugador 
         spriteRenderer = rb.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        distance = Vector2.Distance(transform.position, Player.transform.position);
-        Vector2 dir = Player.transform.position - transform.position;
+        distance = Vector2.Distance(transform.position, Player.transform.position); // Mide la distancia entre el enemigo y el personaje 
+        Vector2 dir = Player.transform.position - transform.position; 
 
-        if(distance < 3.5) 
+        if(distance < 3.5) //Si la distancia es menor que 3.5, el enemigo se movera en la direccion del jugador
         { 
         transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);      
         }

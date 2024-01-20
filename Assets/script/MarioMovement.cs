@@ -124,7 +124,12 @@ public class MarioMovement : MonoBehaviour
 
     public void Changescene() 
     {
-        SceneManager.LoadScene("practica 3.1_changeScene");
+        SceneManager.LoadScene("practica3.1_changeScene");
+    }
+
+    public void EndScene() 
+    {
+        SceneManager.LoadScene("practica3.EndScene");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
