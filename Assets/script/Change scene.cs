@@ -6,10 +6,14 @@ public class Changescene : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        MarioMovement changescene = collision.GetComponent<MarioMovement>();
-        if(changescene) 
+        if (collision.gameObject.GetComponent<MarioMovement>())
         {
-            changescene.Changescene(); 
+        transform.position = new Vector2(-9, 25);           
         }
+        //MarioMovement changescene = collision.GetComponent<MarioMovement>();
+        //if(changescene) 
+        //{
+        //    changescene.Changescene(); 
+        //}
     }
 }

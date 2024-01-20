@@ -7,46 +7,45 @@ using UnityEngine.Tilemaps;
 public class EnemyMovement : MonoBehaviour
 {
    public GameObject Player;
-   private Transform target; 
-   private float speed = 0.1f;
+   private Vector2 target; 
+   public float speed;
    private Vector2 dir;
    private Rigidbody2D rb;
+    private float distance;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
-        speed = 1f;
         rb = GetComponent<Rigidbody2D>();
         Movement();
-        target = Player.transform;
+        target = Player.transform.position;
+        spriteRenderer = rb.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, target.position, speed); 
+        distance = Vector2.Distance(transform.position, Player.transform.position);
+        Vector2 dir = Player.transform.position - transform.position;
+
+        if(distance < 3.5) 
+        { 
+        transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);      
+        }
+
+        if(dir.x  > 0) 
+        { 
+            spriteRenderer.flipX = false;
+        }
+        else if(dir.x < 0) 
+        { 
+            spriteRenderer.flipX = true;
+        }
     }
 
     void Movement() 
     {
-        do
-        {
-            dir.x = Random.Range(-1, 2);
-        }
-        while (dir.x == 0);
-        
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.GetComponent<DeathZone>())
-        {
-            Destroy(gameObject);
-        }
-
-        if (collision.GetComponent<MarioMovement>())
-        {
-            Destroy(gameObject);
-        }
+        dir.x = Random.Range(-1, 2);       
     }
 
     private void FixedUpdate()
@@ -57,8 +56,19 @@ public class EnemyMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.GetComponent<TilemapCollider2D>()) 
-        { 
-        
+        {
+            dir.x = -dir.x;
         }
+       
+        MarioMovement PlayerDeath = collision.gameObject.GetComponent<MarioMovement>();
+        if(PlayerDeath) 
+        {
+            PlayerDeath.DeathZone();
+        }
+        if(collision.gameObject.GetComponent<DeathZone>()) 
+        { 
+            Destroy(collision.gameObject);
+        }
+
     }
 }
