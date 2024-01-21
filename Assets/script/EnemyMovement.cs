@@ -7,18 +7,16 @@ using UnityEngine.Tilemaps;
 public class EnemyMovement : MonoBehaviour
 {
    public GameObject Player;
-   private Vector2 target; 
    public float speed;
    private Vector2 dir;
    private Rigidbody2D rb;
-    private float distance;
-    private SpriteRenderer spriteRenderer;
+   private float distance;
+   private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Movement();
-        target = Player.transform.position; //Asigna como objetivo la posicion del jugador 
         spriteRenderer = rb.GetComponent<SpriteRenderer>();
     }
 
@@ -33,13 +31,13 @@ public class EnemyMovement : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);      
         }
 
-        if(dir.x  > 0) 
-        { 
-            spriteRenderer.flipX = false;
-        }
-        else if(dir.x < 0) 
+        if(dir.x > 0.1) 
         { 
             spriteRenderer.flipX = true;
+        }
+        else if(dir.x < -0.1) 
+        { 
+            spriteRenderer.flipX = false;
         }
     }
 
@@ -52,6 +50,13 @@ public class EnemyMovement : MonoBehaviour
     {
         rb.velocity = dir * speed;
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.GetComponent<MarioMovement>()) 
+        {
+            Destroy(gameObject);
+        } 
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -60,14 +65,9 @@ public class EnemyMovement : MonoBehaviour
             dir.x = -dir.x;
         }
        
-        MarioMovement PlayerDeath = collision.gameObject.GetComponent<MarioMovement>();
-        if(PlayerDeath) 
-        {
-            PlayerDeath.DeathZone();
-        }
         if(collision.gameObject.GetComponent<DeathZone>()) 
         { 
-            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
 
     }

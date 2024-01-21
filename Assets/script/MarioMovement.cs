@@ -119,7 +119,9 @@ public class MarioMovement : MonoBehaviour
 
     public void DeathZone() // al entratr en contacto con la death zone, vuelve a cargar la escena 
     {
+        animator.Play("Death");
         SceneManager.LoadScene("practica 3");
+        animator.Play("Respawn");
     }
 
     public void Changescene() 
@@ -135,8 +137,9 @@ public class MarioMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.GetComponent<EnemyMovement>()) 
-        { 
-            
+        {
+            animator.Play("Death");
+            SceneManager.LoadScene("practica 3");
         }
     }
 }
