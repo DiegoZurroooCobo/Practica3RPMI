@@ -10,7 +10,7 @@ public class EndScene : MonoBehaviour
         if(EndScene != null )
         {
 
-            EndScene.EndScene();
+            EndScene.EndScene(); //Carga la escena final
         }
     }
 }

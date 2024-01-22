@@ -34,24 +34,24 @@ public class MarioMovement : MonoBehaviour
     {
         dir = new Vector2(0, 0);
 
-        if (Input.GetKey(rightKey))
+        if (Input.GetKey(rightKey))    //Se mueve a la derecha
         {
             rSprite.flipX = false;
             dir = new Vector2(1, 0);
         }
-        else if (Input.GetKey(leftKey))
+        else if (Input.GetKey(leftKey)) //Se mueve a la izquierda
         {
             rSprite.flipX = true;
             dir = new Vector2(-1, 0);
         }
 
         isjumping = false;
-        if (Input.GetKey(jumpkey))
+        if (Input.GetKey(jumpkey)) 
         {
             isjumping = true;
         }
     
-        if (dir != Vector2.zero)
+        if (dir != Vector2.zero)    // Si la direccion es contraria cero, inicia la animacion de caminar. Si no, vuelev a la animacion de Idle
         {
             animator.SetBool("IsWalking", true);
         }
@@ -83,7 +83,7 @@ public class MarioMovement : MonoBehaviour
     private void FixedUpdate()
     {
         print(IsGrounded());
-        if (isjumping && IsGrounded())
+        if (isjumping && IsGrounded())  //Si se encuntra saltando Y se encuentra en el suelo, se ejcuta la animacion de saltar y el persoanje aplica una fuerza en el eje Y
         {
             animator.Play("Jumping");
             rb.velocity = new Vector2(rb.velocity.x, 0);
@@ -144,7 +144,7 @@ public class MarioMovement : MonoBehaviour
         }
     }
 
-    public void ResetPosition()
+    public void ResetPosition() //Resetea la posicion original del personaje al ser destruido
     {
         animator.Play("Death");
         transform.position = originalPosition;
