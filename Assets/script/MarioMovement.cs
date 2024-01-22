@@ -20,6 +20,7 @@ public class MarioMovement : MonoBehaviour
     private Animator animator;
     private float currentTime = 0;
     private float MaxTime = 15f;
+    private Vector2 originalPosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -117,29 +118,35 @@ public class MarioMovement : MonoBehaviour
         Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
     }
 
-    public void DeathZone() // al entratr en contacto con la death zone, vuelve a cargar la escena 
-    {
-        animator.Play("Death");
-        SceneManager.LoadScene("practica 3");
-        animator.Play("Respawn");
-    }
+    //public void DeathZone(string sceneName) // al entratr en contacto con la death zone, vuelve a cargar la escena 
+    //{
+    //    animator.Play("Death");
+    //    SceneManager.LoadScene(sceneName);
+    //    animator.Play("Respawn");
+    //}
 
     public void Changescene() 
     {
-        SceneManager.LoadScene("practica3.1_changeScene");
+        SceneManager.LoadScene("Practica3.1_changeScene");
     }
 
     public void EndScene() 
     {
-        SceneManager.LoadScene("practica3.EndScene");
+        SceneManager.LoadScene("Practica 3.End");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.GetComponent<EnemyMovement>()) 
         {
-            animator.Play("Death");
+            animator.Play("Respawn");
             SceneManager.LoadScene("practica 3");
         }
+    }
+
+    public void ResetPosition()
+    {
+        animator.Play("Death");
+        transform.position = originalPosition;
     }
 }

@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour
 {
+    public string sceneToLoad;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         MarioMovement playerDeath = collision.GetComponent<MarioMovement>();
         if(playerDeath) 
         { 
-            playerDeath.DeathZone();
+            playerDeath.ResetPosition();
         }
 
     }

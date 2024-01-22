@@ -28,22 +28,25 @@ public class EnemyMovement : MonoBehaviour
 
         if(distance < 3.5) //Si la distancia es menor que 3.5, el enemigo se movera en la direccion del jugador
         { 
-        transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);      
+        transform.position = Vector2.MoveTowards(transform.position, new Vector2(Player.transform.position.x, transform.position.y), speed * Time.deltaTime);      
         }
 
-        if(dir.x > 0.1) 
-        { 
-            spriteRenderer.flipX = true;
-        }
-        else if(dir.x < -0.1) 
-        { 
-            spriteRenderer.flipX = false;
-        }
+        //if(dir.x > 0.1) 
+        //{ 
+        //    spriteRenderer.flipX = true;
+        //}
+        //else if(dir.x < -0.1) 
+        //{ 
+        //    spriteRenderer.flipX = false;
+        //}
     }
 
     void Movement() 
     {
-        dir.x = Random.Range(-1, 2);       
+        do{
+            dir.x = Random.Range(-1, 2);
+        }while (dir.x == 0);
+                  
     }
 
     private void FixedUpdate()
@@ -60,15 +63,18 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.GetComponent<TilemapCollider2D>()) 
-        {
-            dir.x = -dir.x;
-        }
-       
-        if(collision.gameObject.GetComponent<DeathZone>()) 
+        //if(collision.gameObject.GetComponent<TilemapCollider2D>()) 
+        //{
+        //    dir.x = -dir.x;
+        //}
+        dir.x = -dir.x;
+        spriteRenderer.flipX = !spriteRenderer.flipX;
+        if (collision.gameObject.GetComponent<DeathZone>()) 
         { 
             Destroy(gameObject);
         }
 
     }
+
+    
 }
