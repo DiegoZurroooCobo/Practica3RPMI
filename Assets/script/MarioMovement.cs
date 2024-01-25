@@ -27,6 +27,7 @@ public class MarioMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rSprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        originalPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -45,13 +46,13 @@ public class MarioMovement : MonoBehaviour
             dir = new Vector2(-1, 0);
         }
 
-        isjumping = false;
-        if (Input.GetKey(jumpkey)) 
+        isjumping = false;      
+        if (Input.GetKey(jumpkey))  // al presionar la tecla desiganda para saltar, el booleano se vuelve verdadero
         {
             isjumping = true;
         }
     
-        if (dir != Vector2.zero)    // Si la direccion es contraria cero, inicia la animacion de caminar. Si no, vuelev a la animacion de Idle
+        if (dir != Vector2.zero)    // Si la direccion es contraria cero, inicia la animacion de caminar. Si no, vuelve a la animacion de Idle
         {
             animator.SetBool("IsWalking", true);
         }
@@ -59,13 +60,13 @@ public class MarioMovement : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
         }
-
+        // Realiza la primera animacion de ataque 
         if(Input.GetKey(attackKey)) 
         {
 
             animator.Play("Attack_1");
         }
-      
+        // Realiza la segunda aniamcion de ataque
         if(Input.GetKey(attackKey2)) 
         {
 
@@ -73,7 +74,7 @@ public class MarioMovement : MonoBehaviour
         }
 
         currentTime += Time.deltaTime;
-        if(currentTime > MaxTime) 
+        if(currentTime > MaxTime)   // Al pasar 15 segundos, se realiza una segunda animacion de Idle
         {
             animator.Play("Idle_2");
             currentTime = 0; 
@@ -87,7 +88,7 @@ public class MarioMovement : MonoBehaviour
         {
             animator.Play("Jumping");
             rb.velocity = new Vector2(rb.velocity.x, 0);
-            rb.AddForce(Vector2.up * jumpForce * rb.gravityScale, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * jumpForce * rb.gravityScale, ForceMode2D.Impulse); // Se añade una fuerza en el eje Y teniendo en cuenta la fuerza del salto y la gravedad del RB
         }
 
         if( dir != Vector2.zero ) 
@@ -101,7 +102,7 @@ public class MarioMovement : MonoBehaviour
 
     }
 
-    private bool IsGrounded()
+    private bool IsGrounded()   // un booleano que comprueba si el personaje se encuenta en el suelo 
     {
         RaycastHit2D colission = Physics2D.Raycast(transform.position, Vector2.down, rayDistance, groundMask);
         //Lanza un rayo desde el centro del personaje hacia abajo. El rayo llega hasta la distancia definida. solo va a detectar colisiones si se encuentran dentro del Raycast
@@ -112,7 +113,7 @@ public class MarioMovement : MonoBehaviour
         return false;
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmos() //Dibuja dentro de la escena un rayo desde el centro del personaje 
     {
         Gizmos.color = Color.red;
         Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
@@ -127,20 +128,21 @@ public class MarioMovement : MonoBehaviour
 
     public void Changescene() 
     {
-        SceneManager.LoadScene("Practica3.1_changeScene");
+        SceneManager.LoadScene("Practica3.1_changeScene");  // Permite cambiar al jugador a la segunda escena
     }
 
     public void EndScene() 
     {
-        SceneManager.LoadScene("Practica 3.End");
+        SceneManager.LoadScene("Practica 3.End");   // Cambia al jugador a la ultima escena
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.GetComponent<EnemyMovement>()) 
         {
+            animator.Play("Death");
+            SceneManager.LoadScene("practica 3");   // Resetea la escena entera, volviendo al inicio
             animator.Play("Respawn");
-            SceneManager.LoadScene("practica 3");
         }
     }
 
@@ -148,5 +150,6 @@ public class MarioMovement : MonoBehaviour
     {
         animator.Play("Death");
         transform.position = originalPosition;
+        animator.Play("Respawn");
     }
 }

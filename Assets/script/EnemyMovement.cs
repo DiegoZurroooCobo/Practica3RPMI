@@ -48,7 +48,7 @@ public class EnemyMovement : MonoBehaviour
             dir.x = Random.Range(-1, 2);    //Se mueve de manera aleatoria en el eje X, aunque NUNCA su posicion es 0
         }while (dir.x == 0);    
     }
-    private void FixedUpdate()
+    private void FixedUpdate()  //Se actualiza mas a menudo para que las fisicas vayan mejor 
     {
         rb.velocity = dir * speed;
     }
