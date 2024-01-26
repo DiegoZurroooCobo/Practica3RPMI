@@ -21,6 +21,8 @@ public class MarioMovement : MonoBehaviour
     private float currentTime = 0;
     private float MaxTime = 15f;
     private Vector2 originalPosition;
+    // Prohibido declararse un public GameManager >:(
+
     // Start is called before the first frame update
     void Start()
     {

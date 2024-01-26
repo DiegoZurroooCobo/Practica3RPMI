@@ -15,6 +15,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Start()
     {
+        //Player = FindAnyObjectByType<MarioMovement>().gameObject;
         rb = GetComponent<Rigidbody2D>();
         Movement();
         spriteRenderer = rb.GetComponent<SpriteRenderer>();
@@ -57,6 +58,7 @@ public class EnemyMovement : MonoBehaviour
         if(collision.GetComponent<MarioMovement>()) 
         {
             Destroy(gameObject);    //Si colisiona con el personaje, el enemigo es destruido
+            // Destroy(gameObject.transform.parent.gameObject) // Para destruir al padre si el codigo esta en el hijo
         } 
     }
     private void OnCollisionEnter2D(Collision2D collision)
