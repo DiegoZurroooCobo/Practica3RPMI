@@ -99,11 +99,10 @@ public class MarioMovement : MonoBehaviour
 
             rb.velocity = nVel;
         }
-
     }
 
     private bool IsGrounded()   // un booleano que comprueba si el personaje se encuenta en el suelo 
-    {   // Lo que devuelve     // Lo que da
+    {   // Lo que devuelve     // Lo que recibe
         RaycastHit2D colission = Physics2D.Raycast(transform.position, Vector2.down, rayDistance, groundMask);
         //Lanza un rayo desde el centro del personaje hacia abajo. El rayo llega hasta la distancia definida. solo va a detectar colisiones si se encuentran dentro del Raycast
         if (colission)
