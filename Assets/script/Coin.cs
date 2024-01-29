@@ -12,6 +12,7 @@ public class Coin : MonoBehaviour
     {
         if(collision.gameObject.GetComponent<MarioMovement>()) 
         {
+            GameManager.instance.GetScore();
             Destroy(gameObject);
         }
     }

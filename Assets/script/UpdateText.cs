@@ -7,6 +7,7 @@ public class UpdateText : MonoBehaviour
 {
     public GameManager.GameManagerVariables variable;
     private TMP_Text textComponent;
+    private float time;
 
     private void Start()
     {
@@ -16,21 +17,19 @@ public class UpdateText : MonoBehaviour
     void Update()
     {
         //if(variable == GameManager.GameManagerVariables.TIME) 
-        //{ 
-        
+        //{  
         //}
         //else if(variable == GameManager.GameManagerVariables.SCORE) 
         //{ 
-        
         //}
         //else 
         //{ 
-        
         //}
         switch (variable) 
         {
             case GameManager.GameManagerVariables.TIME:
-                textComponent.text = "TIME: " + GameManager.instance.GetTime(); 
+                textComponent.text = "TIME: " + GameManager.instance.GetTime();
+                System.Math.Round(GameManager.instance.GetTime(),2);
                 break;
             case GameManager.GameManagerVariables.SCORE:
                 textComponent.text = "SCORE: " + GameManager.instance.GetScore(); 

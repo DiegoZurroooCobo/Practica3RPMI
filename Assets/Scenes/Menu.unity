@@ -566,6 +566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a84743019b5f0334b99e50f28d1ff6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Escape: 27
 --- !u!4 &755023138
 Transform:
   m_ObjectHideFlags: 0
@@ -963,7 +964,7 @@ GameObject:
   - component: {fileID: 1598557467}
   - component: {fileID: 1598557466}
   m_Layer: 0
-  m_Name: ZURRO_COBO_DIEGO_AE2D3D_CIA2D3D_01_3_IMG05
+  m_Name: Fondo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

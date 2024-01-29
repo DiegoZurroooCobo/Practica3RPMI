@@ -40,7 +40,6 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("Menu");
         }
     }
-
     // Getter = para obtener el valor de una variable 
     public float GetTime() 
     {

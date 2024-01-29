@@ -59,7 +59,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.GetComponent<MarioMovement>())
         {
-
+            GameManager.instance.GetScore();
             Destroy(gameObject);    //Si colisiona con el personaje, el enemigo es destruido
             // Destroy(gameObject.transform.parent.gameObject) // Para destruir al padre si el codigo esta en el hijo
         }
