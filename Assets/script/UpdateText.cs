@@ -29,7 +29,7 @@ public class UpdateText : MonoBehaviour
         {
             case GameManager.GameManagerVariables.TIME:
                 textComponent.text = "TIME: " + GameManager.instance.GetTime();
-                System.Math.Round(GameManager.instance.GetTime(),2);
+                Mathf.Round(GameManager.instance.GetTime());
                 break;
             case GameManager.GameManagerVariables.SCORE:
                 textComponent.text = "SCORE: " + GameManager.instance.GetScore(); 
