@@ -57,7 +57,16 @@ public class GameManager : MonoBehaviour
 
     // callback == funcion que se va a llamar en el on click de los botones 
     public void LoadScene(string SceneName) 
-    { 
-         SceneManager.LoadScene(SceneName); 
+    {
+        Debug.Log("Play!");
+        SceneManager.LoadScene(SceneName);
+        // Limpia todos los sonidos que estan sonando 
+        AudioManager.instance.ClearAudios();
+    }
+
+    public void ExitGame() 
+    {
+        Debug.Log("Exit");
+        Application.Quit();
     }
 }

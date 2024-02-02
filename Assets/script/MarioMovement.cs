@@ -85,7 +85,7 @@ public class MarioMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        print(IsGrounded());
+        //print(IsGrounded());
         if (isjumping && IsGrounded())  //Si se encuntra saltando Y se encuentra en el suelo, se ejcuta la animacion de saltar y el persoanje aplica una fuerza en el eje Y
         {
             animator.Play("Jumping");
