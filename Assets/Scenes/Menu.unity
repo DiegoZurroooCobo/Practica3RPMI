@@ -227,7 +227,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 28}
+  m_AnchoredPosition: {x: 0, y: 14}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &68197377
@@ -360,7 +360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -19}
+  m_AnchoredPosition: {x: 0, y: -33}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &549528546
@@ -757,7 +757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d4acbdef24f214eb6bf69cfb849cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: fce10ef5841e20149a058a3cae166f2f, type: 3}
+  audioClip: {fileID: 8300000, guid: dd75c69bb7b1f064ea53b094b1efbde2, type: 3}
   isLoop: 1
   playOnGameStart: 1
   volume: 1
@@ -1092,7 +1092,7 @@ Transform:
   m_GameObject: {fileID: 1598557465}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.575, y: -0.43, z: 0}
+  m_LocalPosition: {x: -0.03, y: -0.43, z: 0}
   m_LocalScale: {x: 1.1029743, y: 1.1029743, z: 1.1029743}
   m_ConstrainProportionsScale: 0
   m_Children: []

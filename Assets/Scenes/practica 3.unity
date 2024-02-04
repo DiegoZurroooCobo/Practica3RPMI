@@ -4570,7 +4570,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.07, y: -1.2499999, z: -10}
+  m_LocalPosition: {x: -0.07, y: 10.490001, z: -10}
   m_LocalScale: {x: 1.8705021, y: 1.8102894, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5980,11 +5980,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d4acbdef24f214eb6bf69cfb849cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: a853ffcb0460eed4a96e02a1ad08634e, type: 3}
+  audioClip: {fileID: 8300000, guid: 2e7b188d147df1a44b61831111889bb0, type: 3}
   isLoop: 1
   playOnGameStart: 1
   volume: 1
-  gameObjectName: Game BGMusic
+  gameObjectName: Game BGMusic 1
 --- !u!4 &1056057734
 Transform:
   m_ObjectHideFlags: 0
@@ -54940,7 +54940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2601193880239900570, guid: f380498fb0743d44f9968e83eee07114, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.72
+      value: 11.02
       objectReference: {fileID: 0}
     - target: {fileID: 2601193880239900570, guid: f380498fb0743d44f9968e83eee07114, type: 3}
       propertyPath: m_LocalPosition.z
