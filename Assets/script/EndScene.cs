@@ -10,7 +10,7 @@ public class EndScene : MonoBehaviour
         if(EndScene != null )
         {
 
-            EndScene.EndScene(); //Cambia la escena final
+            GameManager.instance.LoadScene("Practica 3.End");  //Cambia la escena final
         }
     }
 }

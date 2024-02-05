@@ -34,9 +34,10 @@ public class AudioManager : MonoBehaviour
         audioSourceComponent.loop = isLoop;  // La variable del bucle                            
         audioSourceComponent.Play();
         audioList.Add(AudioObject); // añadimos el objecto a la lista para llevar un seguimiento 
-
-
-
+        if(!isLoop) // Si el audio no esta en loop, espero a que acabe para destruirlo
+        {
+            StartCoroutine(WaitAudioEnd(audioSourceComponent)); 
+        }
         return audioSourceComponent;
     }
 
@@ -46,7 +47,15 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(AudioObject);
         }
-
         audioList.Clear();
+    }
+     
+    IEnumerator WaitAudioEnd(AudioSource src) // Corutina = No pausan la ejecucion del programa entre los bucles. Hilos y procesos que no hay en Unity 
+    { 
+        while(src && src.isPlaying) 
+        { 
+            yield return null; // Al llegar a yield, se corta la ejecucion del metodo y le devuelve al codigo a Unity. En los siguintes frames, se vuelve ejecutar el codigo.
+        }
+        Destroy(src.gameObject);
     }
 }

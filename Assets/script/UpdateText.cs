@@ -38,7 +38,6 @@ public class UpdateText : MonoBehaviour
                 break;
         }
     }
-
     // El EventSystem se encarga de habilitar los eventos del usuario (click, scroll, botones del teclado) sobre los elementos de la pantalla.
     // No se toca ni se cambia nada. Se crea automaticamente al crear UI
 }

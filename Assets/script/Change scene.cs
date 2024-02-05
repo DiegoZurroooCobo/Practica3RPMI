@@ -9,7 +9,7 @@ public class Changescene : MonoBehaviour
         MarioMovement changescene = collision.GetComponent<MarioMovement>();
         if(changescene) 
         {
-            changescene.Changescene(); //Permite cambiar a la segunda escena
+            GameManager.instance.LoadScene("Practica3.1_changeScene"); //Permite cambiar a la segunda escena
         }
     }
 }

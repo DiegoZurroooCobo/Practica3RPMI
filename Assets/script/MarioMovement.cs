@@ -12,6 +12,7 @@ public class MarioMovement : MonoBehaviour
     public KeyCode rightKey, leftKey, jumpkey, attackKey, attackKey2;
     public float speed, jumpForce, rayDistance;
     public LayerMask groundMask; // Capa de colisiones 
+    public AudioClip jumpClip;
 
     private Rigidbody2D rb;
     private SpriteRenderer rSprite;
@@ -19,7 +20,7 @@ public class MarioMovement : MonoBehaviour
     private bool isjumping;
     private Animator animator;
     private float currentTime = 0;
-    private float MaxTime = 15f;
+    private float MaxTime;
     private Vector2 originalPosition;
     // Prohibido declararse un public GameManager >:(
 
@@ -76,6 +77,7 @@ public class MarioMovement : MonoBehaviour
         }
 
         currentTime += Time.deltaTime;
+        MaxTime = 15f;
         if(currentTime > MaxTime)   // Al pasar 15 segundos, se realiza una segunda animacion de Idle
         {
             animator.Play("Idle_2");
@@ -91,6 +93,8 @@ public class MarioMovement : MonoBehaviour
             animator.Play("Jumping");
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(Vector2.up * jumpForce * rb.gravityScale, ForceMode2D.Impulse); // Se añade una fuerza en el eje Y teniendo en cuenta la fuerza del salto y la gravedad del RB
+            AudioManager.instance.PlayAudio(jumpClip, "JumpSound");
+            
         }
 
         if( dir != Vector2.zero ) 
@@ -126,23 +130,13 @@ public class MarioMovement : MonoBehaviour
     //    SceneManager.LoadScene(sceneName);
     //    animator.Play("Respawn");
     //}
-
-    public void Changescene() 
-    {
-        SceneManager.LoadScene("Practica3.1_changeScene");  // Permite cambiar al jugador a la segunda escena
-    }
-
-    public void EndScene() 
-    {
-        SceneManager.LoadScene("Practica 3.End");   // Cambia al jugador a la ultima escena
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.GetComponent<EnemyMovement>()) 
         {
             animator.Play("Death");
             SceneManager.LoadScene("practica 3");   // Resetea la escena entera, volviendo al inicio
+            AudioManager.instance.ClearAudios();
             animator.Play("Respawn");
         }
     }
@@ -151,6 +145,7 @@ public class MarioMovement : MonoBehaviour
     {
         animator.Play("Death");
         transform.position = originalPosition;
+        AudioManager.instance.ClearAudios();
         animator.Play("Respawn");
     }
 }

@@ -468,7 +468,7 @@ MonoBehaviour:
   isLoop: 1
   playOnGameStart: 1
   volume: 1
-  gameObjectName: BGMusic 2
+  gameObjectName: Game BGMusic 2
 --- !u!4 &245335253
 Transform:
   m_ObjectHideFlags: 0
