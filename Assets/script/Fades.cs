@@ -26,13 +26,13 @@ public class Fades : MonoBehaviour
     }
     
     IEnumerator FadeIn() 
-    { 
+    {
         Color color = rend.color;
         for(float alpha = 0.0f; alpha >=0; alpha += 0.01f) 
         {
+            yield return new WaitForSeconds((float)alpha);
             color.a = 1;
             rend.color = color;
-            yield return new WaitForSeconds(0.05f);
         }
     }
 }
