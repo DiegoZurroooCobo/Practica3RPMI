@@ -144,8 +144,8 @@ public class MarioMovement : MonoBehaviour
     public void ResetPosition() //Resetea la posicion original del personaje al ser destruido
     {
         animator.Play("Death");
-        AudioManager.instance.ClearAudios();
         transform.position = originalPosition;
+        AudioManager.instance.ClearAudios();
         animator.Play("Respawn");
     }
 }

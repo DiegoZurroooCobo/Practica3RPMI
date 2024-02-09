@@ -16,6 +16,7 @@ public class UpdateText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        time += Time.deltaTime;
         //if(variable == GameManager.GameManagerVariables.TIME) 
         //{  
         //}
@@ -33,6 +34,9 @@ public class UpdateText : MonoBehaviour
                 break;
             case GameManager.GameManagerVariables.SCORE:
                 textComponent.text = "SCORE: " + GameManager.instance.GetScore(); 
+                break;
+            case GameManager.GameManagerVariables.LIFES: 
+                textComponent.text = "LIFES: " + GameManager.instance.GetLifes();    
                 break;
             default:
                 break;

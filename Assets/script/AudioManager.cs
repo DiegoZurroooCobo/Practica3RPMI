@@ -41,6 +41,14 @@ public class AudioManager : MonoBehaviour
         return audioSourceComponent;
     }
 
+    public AudioSource PlayAudio3D(AudioClip audioClip, string gameObjectName, bool isLoop = false, float volume = 1.0f) 
+    {
+        AudioSource audioSource = PlayAudio(audioClip, gameObjectName, false, volume);
+        audioSource.spatialBlend = 1.0f;
+
+        return audioSource;
+    }
+
     public void ClearAudios() 
     { 
         foreach(GameObject AudioObject in audioList) 

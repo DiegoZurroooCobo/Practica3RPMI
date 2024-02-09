@@ -10,11 +10,18 @@ public class Coin : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.GetComponent<MarioMovement>()) 
+        if (collision.gameObject.GetComponent<MarioMovement>())
         {
             GameManager.instance.SetScore(50);
-            GameManager.instance.GetScore();
             Destroy(gameObject);
+            GameManager.instance.GetScore();
+
+            List<GameObject> ListCoins = new List<GameObject>();
+            ListCoins.Add(gameObject);
+            foreach (GameObject gameObject in ListCoins)
+            {
+                Debug.Log(gameObject);
+            }
         }
     }
 }

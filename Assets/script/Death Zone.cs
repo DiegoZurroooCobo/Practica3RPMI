@@ -10,7 +10,7 @@ public class DeathZone : MonoBehaviour
     {
         MarioMovement playerDeath = collision.GetComponent<MarioMovement>();
         if(playerDeath) 
-        { 
+        {
             playerDeath.ResetPosition(); //Resetea la posicion del personaje a su posicion original
         }
 

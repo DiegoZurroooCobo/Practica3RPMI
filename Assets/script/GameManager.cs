@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,10 +8,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance; // La instancia de la clase
     public KeyCode Escape;
-    public enum GameManagerVariables { TIME, SCORE };
+    public enum GameManagerVariables { TIME, SCORE, LIFES };
     // enum = para facilitar la lectura del codigo 
     private float time;
-    private int score;
+    private int score, lifes;
     private void Awake() // primer metodo que se ejecuta en Unity 
     {
         // Singleton dos caracteristicas: - Solo existe una instancia de esa clase
@@ -45,14 +46,29 @@ public class GameManager : MonoBehaviour
     {
         return time;
     }
+
+    //public void ResetTime() 
+    //{ 
+    //    time = 0;
+    //}
     public int GetScore() 
     { 
         return score;
     }
     // Setter = para setear el valor de una variable 
     public int SetScore(int value) 
-    { 
+    {
         return value; 
+    }
+
+    public int GetLifes() 
+    {
+        return lifes;
+    }
+
+    public int SetLifes(int value) 
+    {
+        return value;
     }
 
     // callback == funcion que se va a llamar en el on click de los botones 
@@ -66,7 +82,7 @@ public class GameManager : MonoBehaviour
 
     public void ExitGame() 
     {
-        Debug.Log("Exit");
+        Debug.Log("Exit!");
         Application.Quit();
     }
 }
