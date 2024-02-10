@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody2D rb;
     private float distance;
     private SpriteRenderer spriteRenderer;
-
+    //public AudioClip MovementMusic;
     void Start()
     {
         //Player = FindAnyObjectByType<MarioMovement>().gameObject;
@@ -49,6 +49,8 @@ public class EnemyMovement : MonoBehaviour
         {
             dir.x = Random.Range(-1, 2);    //Se mueve de manera aleatoria en el eje X, aunque NUNCA su posicion es 0
         } while (dir.x == 0);
+
+        //AudioManager.instance.PlayAudio3D(MovementMusic, "MovementMusic");
     }
     private void FixedUpdate()  //Se actualiza mas a menudo para que las fisicas vayan mejor 
     {

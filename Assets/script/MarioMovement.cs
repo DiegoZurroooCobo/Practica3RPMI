@@ -12,7 +12,7 @@ public class MarioMovement : MonoBehaviour
     public KeyCode rightKey, leftKey, jumpkey, attackKey, attackKey2;
     public float speed, jumpForce, rayDistance;
     public LayerMask groundMask; // Capa de colisiones 
-    public AudioClip jumpClip;
+    public AudioClip jumpClip, respawnClip;
 
     private Rigidbody2D rb;
     private SpriteRenderer rSprite;
@@ -138,6 +138,7 @@ public class MarioMovement : MonoBehaviour
             SceneManager.LoadScene("practica 3");   // Resetea la escena entera, volviendo al inicio
             AudioManager.instance.ClearAudios();
             animator.Play("Respawn");
+            AudioManager.instance.PlayAudio(respawnClip, "respawnClip");
         }
     }
 
@@ -147,5 +148,6 @@ public class MarioMovement : MonoBehaviour
         transform.position = originalPosition;
         AudioManager.instance.ClearAudios();
         animator.Play("Respawn");
+        AudioManager.instance.PlayAudio(respawnClip, "respawnClip");
     }
 }

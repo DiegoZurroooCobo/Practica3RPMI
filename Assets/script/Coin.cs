@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+    public AudioClip coinClip;
     private void Start()
     {
         
@@ -22,6 +23,8 @@ public class Coin : MonoBehaviour
             {
                 Debug.Log(gameObject);
             }
+
+            AudioManager.instance.PlayAudio(coinClip, "coinClip");
         }
     }
 }
