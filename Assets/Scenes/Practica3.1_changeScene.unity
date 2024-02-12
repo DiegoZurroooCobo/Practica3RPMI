@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -194,7 +198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5287317839882842566, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 53.46154
+      value: 57.27
       objectReference: {fileID: 0}
     - target: {fileID: 5287317839882842566, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
       propertyPath: m_LocalPosition.y
@@ -232,6 +236,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -395,9 +403,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.2241173, y: -0.02014024}
+  m_Offset: {x: 0.55859745, y: 1.2600658}
   serializedVersion: 2
-  m_Radius: 16.196968
+  m_Radius: 17.528189
 --- !u!50 &150046446
 Rigidbody2D:
   serializedVersion: 4
@@ -457,7 +465,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.042144775, y: 16.303871}
+  m_Offset: {x: 0.04195404, y: 16.303871}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -468,7 +476,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 35.533356, y: 6.079706}
+  m_Size: {x: 30.411987, y: 6.0797043}
   m_EdgeRadius: 0
 --- !u!212 &150046448
 SpriteRenderer:
@@ -574,7 +582,7 @@ AudioSource:
   MinDistance: 1.54
   MaxDistance: 3.62
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -582,23 +590,32 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.42541435
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -2.3515894
+      outSlope: -2.3515894
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.6056352
+      value: 0.5202942
+      inSlope: -1.706221
+      outSlope: -1.706221
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.26285174
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.4255846
+      outSlope: -0.4255846
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -759,6 +776,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   jumpClip: {fileID: 8300000, guid: 2a03faf7b3f2e7c43a2b6b04ebeae11d, type: 3}
+  respawnClip: {fileID: 0}
 --- !u!114 &226453784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -918,6 +936,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1026,9 +1048,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.39003524, y: 0.7305657}
+  m_Offset: {x: 0.39003524, y: 0.32124987}
   serializedVersion: 2
-  m_Radius: 17.11446
+  m_Radius: 17.72844
 --- !u!50 &258946969
 Rigidbody2D:
   serializedVersion: 4
@@ -1088,7 +1110,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.042144775, y: 16.251146}
+  m_Offset: {x: -0.07922745, y: 16.251146}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1099,7 +1121,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 35.533356, y: 5.974251}
+  m_Size: {x: 28.487175, y: 5.974251}
   m_EdgeRadius: 0
 --- !u!212 &258946971
 SpriteRenderer:
@@ -1205,7 +1227,7 @@ AudioSource:
   MinDistance: 0.97
   MaxDistance: 1.83
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -1213,23 +1235,23 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      time: 0.46944672
+      value: 0.99594116
+      inSlope: -4.92326
+      outSlope: -4.92326
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0.039414316
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.5302653
+      outSlope: -0.5302653
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -1292,11 +1314,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5287317839882842566, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.28
+      value: 47.04
       objectReference: {fileID: 0}
     - target: {fileID: 5287317839882842566, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5713412
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: 5287317839882842566, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1330,6 +1352,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1387,6 +1413,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1475,6 +1505,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1586,6 +1620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FollowObject: {fileID: 226453787}
+  FollowOffset: {x: 0, y: 0}
 --- !u!1 &766365259
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,6 +2101,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2123,6 +2162,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2180,6 +2223,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2301,7 +2348,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.042144775, y: 17.047192}
+  m_Offset: {x: 0.09395361, y: 17.047192}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2312,7 +2359,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 35.533356, y: 7.566348}
+  m_Size: {x: 31.904652, y: 7.566349}
   m_EdgeRadius: 0
 --- !u!212 &952029974
 SpriteRenderer:
@@ -2418,7 +2465,7 @@ AudioSource:
   MinDistance: 0.77
   MaxDistance: 2.95
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -2426,19 +2473,28 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.52881354
+      time: 0.26101694
       value: 1
-      inSlope: -1.8917792
-      outSlope: -1.8917792
+      inSlope: -3.8326955
+      outSlope: -3.8326955
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.942688
-      value: 0.6303455
-      inSlope: -0.529024
-      outSlope: -0.529024
+      time: 0.5220339
+      value: 0.5
+      inSlope: -0.9581739
+      outSlope: -0.9581739
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.26112124
+      outSlope: -0.26112124
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -2715,6 +2771,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2920,6 +2980,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3341,6 +3405,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3506,7 +3574,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.042144775, y: 16.216476}
+  m_Offset: {x: -0.060091972, y: 16.216476}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3517,7 +3585,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 35.533356, y: 5.904933}
+  m_Size: {x: 30.215132, y: 5.904934}
   m_EdgeRadius: 0
 --- !u!212 &1692815738
 SpriteRenderer:
@@ -3623,7 +3691,7 @@ AudioSource:
   MinDistance: 1.42
   MaxDistance: 3.43
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -3631,23 +3699,32 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.41399416
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -2.4164588
+      outSlope: -2.4164588
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.8279883
+      value: 0.5
+      inSlope: -0.6041147
+      outSlope: -0.6041147
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.41415915
+      outSlope: -0.41415915
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -3816,6 +3893,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52207,6 +52288,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52264,6 +52349,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903621491446850821, guid: b21328233de8c8c4a94d60d4f8180265, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3fa3f303201e65e4ba84563c90c70596, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

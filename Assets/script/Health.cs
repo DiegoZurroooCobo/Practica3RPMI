@@ -2,18 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin : MonoBehaviour
+public class Health : MonoBehaviour
 {
-    public AudioClip coinClip;
-    private void Start()
-    {
-        
-    }
+    public AudioClip healthClip;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<MarioMovement>())
         {
-            GameManager.instance.SetScore(GameManager.instance.GetScore() + 50);
+            GameManager.instance.SetLifes(GameManager.instance.GetLifes() + 1 );
             Destroy(gameObject);
 
             List<GameObject> ListCoins = new List<GameObject>();
@@ -23,7 +20,7 @@ public class Coin : MonoBehaviour
                 Debug.Log(gameObject);
             }
 
-            AudioManager.instance.PlayAudio(coinClip, "coinClip");
+            AudioManager.instance.PlayAudio(healthClip, "coinClip");
         }
     }
 }

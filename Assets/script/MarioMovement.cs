@@ -136,6 +136,7 @@ public class MarioMovement : MonoBehaviour
         {
             animator.Play("Death");
             SceneManager.LoadScene("practica 3");   // Resetea la escena entera, volviendo al inicio
+            GameManager.instance.SetLifes(GameManager.instance.GetLifes() - 1);
             AudioManager.instance.ClearAudios();
             animator.Play("Respawn");
             AudioManager.instance.PlayAudio(respawnClip, "respawnClip");
@@ -146,7 +147,9 @@ public class MarioMovement : MonoBehaviour
     {
         animator.Play("Death");
         transform.position = originalPosition;
+        GameManager.instance.SetLifes(GameManager.instance.GetLifes() - 1);
         AudioManager.instance.ClearAudios();
+        FindObjectOfType<PlayAudio>()?.Restart();
         animator.Play("Respawn");
         AudioManager.instance.PlayAudio(respawnClip, "respawnClip");
     }

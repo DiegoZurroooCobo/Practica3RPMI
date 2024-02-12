@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro; // Avisa al codigo que vamos a utilizar otro codigo 
@@ -7,16 +8,15 @@ public class UpdateText : MonoBehaviour
 {
     public GameManager.GameManagerVariables variable;
     private TMP_Text textComponent;
-    private float time;
 
     private void Start()
     {
         textComponent = gameObject.GetComponent<TMP_Text>();
+        GameManager.instance.SetLifes(5);
     }
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
         //if(variable == GameManager.GameManagerVariables.TIME) 
         //{  
         //}
@@ -26,16 +26,17 @@ public class UpdateText : MonoBehaviour
         //else 
         //{ 
         //}
-        switch (variable) 
+        switch (variable)
         {
             case GameManager.GameManagerVariables.TIME:
-                textComponent.text = "TIME: " + GameManager.instance.GetTime();
-                System.Math.Round(GameManager.instance.GetTime(), 2);
+
+                textComponent.text = "TIME: " + GameManager.instance.GetTime().ToString("0.00");
+                //System.Math.Round(GameManager.instance.GetTime(), 2);
                 break;
             case GameManager.GameManagerVariables.SCORE:
                 textComponent.text = "SCORE: " + GameManager.instance.GetScore(); 
                 break;
-            case GameManager.GameManagerVariables.LIFES: 
+            case GameManager.GameManagerVariables.LIFES:
                 textComponent.text = "LIFES: " + GameManager.instance.GetLifes();    
                 break;
             default:

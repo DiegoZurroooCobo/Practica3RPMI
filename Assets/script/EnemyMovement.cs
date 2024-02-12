@@ -12,6 +12,7 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody2D rb;
     private float distance;
     private SpriteRenderer spriteRenderer;
+    public AudioClip deathClip;
     //public AudioClip MovementMusic;
     void Start()
     {
@@ -60,9 +61,9 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.GetComponent<MarioMovement>())
         {
-            GameManager.instance.SetScore(100);
+            GameManager.instance.SetScore(GameManager.instance.GetScore() + 100);
             Destroy(gameObject); //Si colisiona con el personaje, el enemigo es destruido
-            GameManager.instance.GetScore();
+            AudioManager.instance.PlayAudio(deathClip, "deathClip");
             // Destroy(gameObject.transform.parent.gameObject) //Para destruir al padre si el codigo esta en el hijo
         }
     }

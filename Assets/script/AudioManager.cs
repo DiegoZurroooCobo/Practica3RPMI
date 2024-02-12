@@ -56,6 +56,7 @@ public class AudioManager : MonoBehaviour
             Destroy(AudioObject);
         }
         audioList.Clear();
+        StopAllCoroutines();
     }
      
     IEnumerator WaitAudioEnd(AudioSource src) // Corutina = No pausan la ejecucion del programa entre los bucles. Hilos y procesos que no hay en Unity 

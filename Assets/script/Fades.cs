@@ -11,7 +11,6 @@ public class Fades : MonoBehaviour
     {
         rend = GetComponent<SpriteRenderer>();
         StartCoroutine(FadeOut());
-        StartCoroutine(FadeIn());
     }
 
     IEnumerator FadeOut() 
@@ -23,16 +22,20 @@ public class Fades : MonoBehaviour
             rend.color = color;
             yield return new WaitForSeconds(0.02f); // le devuelve el control a unity durante el tiempo establecido
         }
+        StartCoroutine(FadeIn());
     }
     
     IEnumerator FadeIn() 
     {
         Color color = rend.color;
-        for(float alpha = 0.0f; alpha >= 0; alpha += 0.01f) 
+        for(float alpha = 0.0f; alpha <= 1; alpha += 0.01f) 
         {
-            yield return new WaitForSeconds(0.2f);
-            color.a = 1;
+            color.a = alpha;
             rend.color = color;
+            yield return new WaitForSeconds(0.02f);
         }
+        StartCoroutine(FadeOut()); 
     }
+
+    // RECURSION COMPUESTA
 }

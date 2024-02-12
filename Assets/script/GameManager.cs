@@ -56,9 +56,9 @@ public class GameManager : MonoBehaviour
         return score;
     }
     // Setter = para setear el valor de una variable 
-    public int SetScore(int value) 
+    public void SetScore(int value) 
     {
-        return value; 
+        score = value; 
     }
 
     public int GetLifes() 
@@ -66,9 +66,9 @@ public class GameManager : MonoBehaviour
         return lifes;
     }
 
-    public int SetLifes(int value) 
+    public void SetLifes(int value) 
     {
-        return value;
+        lifes = value;
     }
 
     // callback == funcion que se va a llamar en el on click de los botones 
