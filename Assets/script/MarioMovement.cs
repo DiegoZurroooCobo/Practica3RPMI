@@ -12,7 +12,7 @@ public class MarioMovement : MonoBehaviour
     public KeyCode rightKey, leftKey, jumpkey, attackKey, attackKey2;
     public float speed, jumpForce, rayDistance;
     public LayerMask groundMask; // Capa de colisiones 
-    public AudioClip jumpClip, respawnClip;
+    public AudioClip jumpClip, respawnClip, deathClip;
 
     private Rigidbody2D rb;
     private SpriteRenderer rSprite;
@@ -83,6 +83,11 @@ public class MarioMovement : MonoBehaviour
             animator.Play("Idle_2");
             currentTime = 0; 
         }
+
+        //if(GameManager.instance.GetLifes() = 1) 
+        //{ 
+        
+        //}
     }
 
     private void FixedUpdate()
@@ -134,12 +139,8 @@ public class MarioMovement : MonoBehaviour
     {
         if(collision.gameObject.GetComponent<EnemyMovement>()) 
         {
-            animator.Play("Death");
-            SceneManager.LoadScene("practica 3");   // Resetea la escena entera, volviendo al inicio
-            GameManager.instance.SetLifes(GameManager.instance.GetLifes() - 1);
-            AudioManager.instance.ClearAudios();
-            animator.Play("Respawn");
-            AudioManager.instance.PlayAudio(respawnClip, "respawnClip");
+            ResetPosition();
+            AudioManager.instance.PlayAudio(deathClip, "deathClip");
         }
     }
 
@@ -147,7 +148,7 @@ public class MarioMovement : MonoBehaviour
     {
         animator.Play("Death");
         transform.position = originalPosition;
-        GameManager.instance.SetLifes(GameManager.instance.GetLifes() - 1);
+        GameManager.instance.SetLifes(GameManager.instance.GetLifes() - 1); // Las vidas bajan en 1 al entrar en la death zone o colisionar con un enemigo 
         AudioManager.instance.ClearAudios();
         FindObjectOfType<PlayAudio>()?.Restart();
         animator.Play("Respawn");

@@ -20,7 +20,6 @@ public class PlayAudio : MonoBehaviour
     public void Restart()
     {
         AudioManager.instance.PlayAudio(audioClip, gameObjectName, isLoop, volume); // Llamar al metodo si el sonido tiene que sonar nada mas empezar
-
     }
 
 

@@ -11,10 +11,10 @@ public class AudioManager : MonoBehaviour
     {
         if(!instance) 
         {
-            instance = this;
+            instance = this;    // Convierte este AudioManager en el principal si no hay mas AM
             DontDestroyOnLoad(gameObject);
         }
-        else 
+        else // Si si hay mas AM, se destruye 
         { 
             Destroy(gameObject);
         }
@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
     {
     }
     // Parametros por defecto 
-    public AudioSource PlayAudio(AudioClip audioClip, string gameObjectName, bool isLoop = false, float volume = 1.0f) 
+    public AudioSource PlayAudio(AudioClip audioClip, string gameObjectName, bool isLoop = false, float volume = 1.0f)  // Crea el clip de audio para la musica o los efectos de sonido
     {
         GameObject AudioObject = new GameObject(gameObjectName);    // Creamos un GameObject y le añadimos el nombre
         AudioObject.transform.SetParent(transform);
@@ -41,7 +41,7 @@ public class AudioManager : MonoBehaviour
         return audioSourceComponent;
     }
 
-    public AudioSource PlayAudio3D(AudioClip audioClip, string gameObjectName, bool isLoop = false, float volume = 1.0f) 
+    public AudioSource PlayAudio3D(AudioClip audioClip, string gameObjectName, bool isLoop = false, float volume = 1.0f) // Creal el AudioClip en 3D
     {
         AudioSource audioSource = PlayAudio(audioClip, gameObjectName, false, volume);
         audioSource.spatialBlend = 1.0f;
@@ -49,14 +49,14 @@ public class AudioManager : MonoBehaviour
         return audioSource;
     }
 
-    public void ClearAudios() 
+    public void ClearAudios() // Limpia los audios al cambiar de escena o reiniciarla 
     { 
         foreach(GameObject AudioObject in audioList) 
         {
             Destroy(AudioObject);
         }
         audioList.Clear();
-        StopAllCoroutines();
+        StopAllCoroutines(); // Detiene todas las corutinas en el monento
     }
      
     IEnumerator WaitAudioEnd(AudioSource src) // Corutina = No pausan la ejecucion del programa entre los bucles. Hilos y procesos que no hay en Unity 

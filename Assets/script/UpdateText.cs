@@ -12,32 +12,21 @@ public class UpdateText : MonoBehaviour
     private void Start()
     {
         textComponent = gameObject.GetComponent<TMP_Text>();
-        GameManager.instance.SetLifes(5);
+        GameManager.instance.SetLifes(3); // Da el valor de las vidas al empezar el juego 
     }
     // Update is called once per frame
     void Update()
     {
-        //if(variable == GameManager.GameManagerVariables.TIME) 
-        //{  
-        //}
-        //else if(variable == GameManager.GameManagerVariables.SCORE) 
-        //{ 
-        //}
-        //else 
-        //{ 
-        //}
-        switch (variable)
+        switch (variable) // El Switch es un if else mas simplificado 
         {
-            case GameManager.GameManagerVariables.TIME:
-
-                textComponent.text = "TIME: " + GameManager.instance.GetTime().ToString("0.00");
-                //System.Math.Round(GameManager.instance.GetTime(), 2);
+            case GameManager.GameManagerVariables.TIME:   
+                textComponent.text = "Time: " + GameManager.instance.GetTime().ToString("0.00"); // Muestra en pantalla el texto con el tiempo actualizsdo creado en el GM 
                 break;
             case GameManager.GameManagerVariables.SCORE:
-                textComponent.text = "SCORE: " + GameManager.instance.GetScore(); 
+                textComponent.text = "Score: " + GameManager.instance.GetScore(); // Muestra en pantalla el texto con la puntuacion de las monedas y los enemigos
                 break;
             case GameManager.GameManagerVariables.LIFES:
-                textComponent.text = "LIFES: " + GameManager.instance.GetLifes();    
+                textComponent.text = "Lifes: " + GameManager.instance.GetLifes(); // Muestra en pantalla el texto con las vidas, que aumentan o disminuyen 
                 break;
             default:
                 break;

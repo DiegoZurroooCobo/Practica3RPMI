@@ -10,17 +10,17 @@ public class Health : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<MarioMovement>())
         {
-            GameManager.instance.SetLifes(GameManager.instance.GetLifes() + 1 );
+            GameManager.instance.SetLifes(GameManager.instance.GetLifes() + 1 ); // Al recoger una vida, el contador de vidas aumenta en 1 
             Destroy(gameObject);
 
             List<GameObject> ListCoins = new List<GameObject>();
             ListCoins.Add(gameObject);
             foreach (GameObject gameObject in ListCoins)
             {
-                Debug.Log(gameObject);
+                Debug.Log(gameObject);  // crea una lista que registra las vidas recogidas 
             }
 
-            AudioManager.instance.PlayAudio(healthClip, "coinClip");
+            AudioManager.instance.PlayAudio(healthClip, "coinClip"); // Suena el efecto de sonido de las vidas 
         }
     }
 }

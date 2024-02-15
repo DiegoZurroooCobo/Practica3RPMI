@@ -364,6 +364,7 @@ GameObject:
   - component: {fileID: 1340399397}
   - component: {fileID: 1340399396}
   - component: {fileID: 1340399395}
+  - component: {fileID: 1340399398}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -445,6 +446,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!328 &1340399398
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340399394}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 50eba366b2b7a364cb0aa231ab219244, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 1340399396}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 0
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1 &1818517700
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,6 +492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1818517702}
   - component: {fileID: 1818517701}
+  - component: {fileID: 1818517703}
   m_Layer: 0
   m_Name: Fondo
   m_TagString: Untagged
@@ -529,6 +567,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!328 &1818517703
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818517700}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 50eba366b2b7a364cb0aa231ab219244, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1 &1819933791
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1819933793}
   - component: {fileID: 1819933792}
+  - component: {fileID: 1819933794}
   m_Layer: 0
   m_Name: BGMusic
   m_TagString: Untagged
@@ -561,7 +636,7 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: 9bb43b3398066664e92273c702572c0f, type: 3}
   isLoop: 1
   playOnGameStart: 1
-  volume: 1
+  volume: 0.75
   gameObjectName: 'Victory Music '
 --- !u!4 &1819933793
 Transform:
@@ -578,6 +653,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1819933794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819933791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d4acbdef24f214eb6bf69cfb849cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 618f10578cb7bb540a4a21edde80a9f9, type: 3}
+  isLoop: 0
+  playOnGameStart: 1
+  volume: 1
+  gameObjectName: Yipeee Sound Effect
 --- !u!1 &1875227458
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,6 +768,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Escape: 27
+  enterClip: {fileID: 0}
+  exitClip: {fileID: 0}
 --- !u!4 &1973605840
 Transform:
   m_ObjectHideFlags: 0
@@ -769,7 +863,7 @@ Transform:
   m_GameObject: {fileID: 1976128540}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.3, y: 1.84, z: 0}
+  m_LocalPosition: {x: 3.84, y: -0.17, z: 0}
   m_LocalScale: {x: 0.053949066, y: 0.053949066, z: 0.053949066}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -834,7 +928,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'THE
 
-    END'
+    END!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
