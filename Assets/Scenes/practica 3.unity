@@ -5924,6 +5924,7 @@ MonoBehaviour:
   jumpClip: {fileID: 8300000, guid: 2a03faf7b3f2e7c43a2b6b04ebeae11d, type: 3}
   respawnClip: {fileID: 8300000, guid: 744be89994826a74d9a133a387e3cc1d, type: 3}
   deathClip: {fileID: 8300000, guid: 37e92d1495d5b8f4a8ee8c5460bc754a, type: 3}
+  LowHPClip: {fileID: 8300000, guid: 7015b9ac64884eb4fa2a906893c3b8bd, type: 3}
 --- !u!50 &650126298
 Rigidbody2D:
   serializedVersion: 4

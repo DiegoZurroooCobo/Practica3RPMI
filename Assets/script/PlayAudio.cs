@@ -13,7 +13,7 @@ public class PlayAudio : MonoBehaviour
     {
         if (playOnGameStart)
         {
-            Restart();
+            Restart();   // Llama el metodo de Restart 
         }
     }
 

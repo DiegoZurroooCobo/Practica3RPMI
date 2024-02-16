@@ -40,7 +40,9 @@ public class GameManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))    // Al presionar el boton de Escape te permite volver al menu desde cualquier escena 
         {
             SceneManager.LoadScene("Menu");
+            AudioManager.instance.ClearAudios();
         }
+        
     }
     // Getter = para obtener el valor de una variable 
     public float GetTime() // obtiene el tiempo

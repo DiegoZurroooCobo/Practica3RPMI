@@ -12,7 +12,7 @@ public class MarioMovement : MonoBehaviour
     public KeyCode rightKey, leftKey, jumpkey, attackKey, attackKey2;
     public float speed, jumpForce, rayDistance;
     public LayerMask groundMask; // Capa de colisiones 
-    public AudioClip jumpClip, respawnClip, deathClip;
+    public AudioClip jumpClip, respawnClip, deathClip, LowHPClip;
 
     private Rigidbody2D rb;
     private SpriteRenderer rSprite;
@@ -84,10 +84,10 @@ public class MarioMovement : MonoBehaviour
             currentTime = 0; 
         }
 
-        //if(GameManager.instance.GetLifes() = 1) 
-        //{ 
-        
-        //}
+        if(GameManager.instance.GetLifes() <= 1) 
+        {
+            AudioManager.instance.PlayAudio(LowHPClip, "LowHPClip");
+        }
     }
 
     private void FixedUpdate()
