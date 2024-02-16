@@ -86,7 +86,7 @@ public class MarioMovement : MonoBehaviour
 
         if(GameManager.instance.GetLifes() <= 1) 
         {
-            AudioManager.instance.PlayAudio(LowHPClip, "LowHPClip");
+            AudioManager.instance.PlayAudio(LowHPClip, "LowHPClip", true, 0.1f);
         }
     }
 
