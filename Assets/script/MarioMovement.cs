@@ -13,6 +13,8 @@ public class MarioMovement : MonoBehaviour
     public float speed, jumpForce, rayDistance;
     public LayerMask groundMask; // Capa de colisiones 
     public AudioClip jumpClip, respawnClip, deathClip, LowHPClip;
+    public int maxJumps = 2;
+    public int currentJumps = 0;
 
     private Rigidbody2D rb;
     private SpriteRenderer rSprite;
@@ -49,8 +51,8 @@ public class MarioMovement : MonoBehaviour
             dir = new Vector2(-1, 0);
         }
 
-        isjumping = false;      
-        if (Input.GetKey(jumpkey))  // al presionar la tecla desiganda para saltar, el booleano se vuelve verdadero
+        //isjumping = false;      
+        if (Input.GetKeyDown(jumpkey))// al presionar la tecla desiganda para saltar, el booleano se vuelve verdadero
         {
             isjumping = true;
         }
@@ -92,15 +94,17 @@ public class MarioMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        bool grnd = IsGrounded(); // Ejecuta el IsGrounded constantemente. 
         //print(IsGrounded());
-        if (isjumping && IsGrounded())  //Si se encuntra saltando Y se encuentra en el suelo, se ejcuta la animacion de saltar y el persoanje aplica una fuerza en el eje Y
+        if (isjumping && (grnd || currentJumps < maxJumps))//Si se encuntra saltando Y se encuentra en el suelo, se ejcuta la animacion de saltar y el persoanje aplica una fuerza en el eje Y
         {
             animator.Play("Jumping");
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(Vector2.up * jumpForce * rb.gravityScale, ForceMode2D.Impulse); // Se añade una fuerza en el eje Y teniendo en cuenta la fuerza del salto y la gravedad del RB
+            currentJumps++; // le suma 1 a la varieble 
             AudioManager.instance.PlayAudio(jumpClip, "JumpSound");
-            
         }
+            isjumping = false;
 
         if( dir != Vector2.zero ) 
         { 
@@ -118,6 +122,7 @@ public class MarioMovement : MonoBehaviour
         //Lanza un rayo desde el centro del personaje hacia abajo. El rayo llega hasta la distancia definida. solo va a detectar colisiones si se encuentran dentro del Raycast
         if (colission)
         {
+            currentJumps = 0;
             return true;
         }
         return false;
@@ -129,12 +134,6 @@ public class MarioMovement : MonoBehaviour
         Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
     }
 
-    //public void DeathZone(string sceneName) // al entratr en contacto con la death zone, vuelve a cargar la escena 
-    //{
-    //    animator.Play("Death");
-    //    SceneManager.LoadScene(sceneName);
-    //    animator.Play("Respawn");
-    //}
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.GetComponent<EnemyMovement>()) 
