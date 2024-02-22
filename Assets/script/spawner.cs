@@ -18,9 +18,9 @@ public class spawner : MonoBehaviour
         currentTime += Time.deltaTime;
         if(currentTime >= MaxTime) 
         { 
-            Instantiate(objtToSpawn, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+            Instantiate(objtToSpawn, new Vector2(Random.Range(-17f, 1.8f), transform.position.y), Quaternion.identity);
             currentTime = 0;
-            MaxTime = 5;
+            MaxTime = 3;
         }
     }
 }
