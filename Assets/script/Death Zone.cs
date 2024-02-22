@@ -12,7 +12,6 @@ public class DeathZone : MonoBehaviour
         if(playerDeath) 
         {
             playerDeath.ResetPosition(); //Resetea la posicion del personaje a su posicion original
-      
         }
 
     }

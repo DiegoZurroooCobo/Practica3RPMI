@@ -5917,14 +5917,17 @@ MonoBehaviour:
   attackKey: 323
   attackKey2: 324
   speed: 7
-  jumpForce: 2.5
-  rayDistance: 0.67
+  jumpForce: 2.75
+  rayDistance: 0.68
   groundMask:
     serializedVersion: 2
     m_Bits: 8
   jumpClip: {fileID: 8300000, guid: 2a03faf7b3f2e7c43a2b6b04ebeae11d, type: 3}
   respawnClip: {fileID: 8300000, guid: 744be89994826a74d9a133a387e3cc1d, type: 3}
   deathClip: {fileID: 8300000, guid: 37e92d1495d5b8f4a8ee8c5460bc754a, type: 3}
+  LowHPClip: {fileID: 8300000, guid: 7015b9ac64884eb4fa2a906893c3b8bd, type: 3}
+  maxJumps: 2
+  currentJumps: 0
 --- !u!50 &650126298
 Rigidbody2D:
   serializedVersion: 4
@@ -57796,7 +57799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8558543425016627599, guid: f380498fb0743d44f9968e83eee07114, type: 3}
       propertyPath: jumpForce
-      value: 2.5
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 8558543425016627599, guid: f380498fb0743d44f9968e83eee07114, type: 3}
       propertyPath: jumpforce
@@ -57808,7 +57811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8558543425016627599, guid: f380498fb0743d44f9968e83eee07114, type: 3}
       propertyPath: rayDistance
-      value: 0.67
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 8558543425016627599, guid: f380498fb0743d44f9968e83eee07114, type: 3}
       propertyPath: groundMask.m_Bits
