@@ -6,8 +6,8 @@ using UnityEngine.Tilemaps;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public GameObject Player;
-    public float speed;
+    public GameObject Player, TrapBall;
+    public float speed, currentTime = 0, MaxTime;
     private Vector2 dir;
     private Rigidbody2D rb;
     private float distance;
@@ -42,6 +42,14 @@ public class EnemyMovement : MonoBehaviour
         //{ 
         //    spriteRenderer.flipX = false;
         //}
+        currentTime += Time.deltaTime;
+        if (currentTime >= MaxTime) 
+        {
+            MaxTime = 3f;
+            GameObject trapBall = Instantiate(TrapBall, new Vector2( Random.Range(transform.position.x - 3, transform.position.x + 3), transform.position.y), Quaternion.identity);
+            trapBall.GetComponent<TrapBall>().dir.x = Random.Range(-3 , 3);
+            currentTime = 0;
+        }
     }
 
     void Movement()

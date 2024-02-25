@@ -39,7 +39,7 @@ public class Fireworks : MonoBehaviour
         {
             if (index < 4)
             {
-                int Fireworks2 = Random.Range(0, 3);
+                int Fireworks2 = Random.Range(0, 2);
                 index++;
                 for (Fireworks2 = 0; Fireworks2 < 2; Fireworks2++)
                 {

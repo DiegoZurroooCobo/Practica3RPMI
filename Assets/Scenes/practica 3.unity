@@ -4487,7 +4487,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 650126286}
+  TrapBall: {fileID: 0}
   speed: 1
+  currentTime: 0
+  MaxTime: 0
   deathClip: {fileID: 8300000, guid: 1a2098ddcaa7a224d9879ee7d0874080, type: 3}
 --- !u!4 &135910547
 Transform:
@@ -5291,7 +5294,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 650126286}
+  TrapBall: {fileID: 1168703215741269399, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
   speed: 3
+  currentTime: 0
+  MaxTime: 0
   deathClip: {fileID: 8300000, guid: 1a2098ddcaa7a224d9879ee7d0874080, type: 3}
 --- !u!4 &579331578
 Transform:
@@ -5607,7 +5613,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 650126286}
+  TrapBall: {fileID: 0}
   speed: 3
+  currentTime: 0
+  MaxTime: 0
   deathClip: {fileID: 8300000, guid: 1a2098ddcaa7a224d9879ee7d0874080, type: 3}
 --- !u!4 &634846191
 Transform:
@@ -8369,7 +8378,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 650126286}
+  TrapBall: {fileID: 0}
   speed: 3
+  currentTime: 0
+  MaxTime: 0
   deathClip: {fileID: 8300000, guid: 1a2098ddcaa7a224d9879ee7d0874080, type: 3}
 --- !u!4 &1381837991
 Transform:
@@ -9427,7 +9439,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 650126286}
+  TrapBall: {fileID: 0}
   speed: 1
+  currentTime: 0
+  MaxTime: 0
   deathClip: {fileID: 8300000, guid: 1a2098ddcaa7a224d9879ee7d0874080, type: 3}
 --- !u!4 &2031032676
 Transform:
@@ -57709,6 +57724,67 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1284378713854026256
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 48930553458174885, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168703215741269399, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
+      propertyPath: m_Name
+      value: TrapBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221844685929375788, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221844685929375788, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221844685929375788, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.8421781
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221844685929375788, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221844685929375788, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221844685929375788, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221844685929375788, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221844685929375788, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221844685929375788, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221844685929375788, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9eb2203d912c5d64ea882dce6d157c33, type: 3}
 --- !u!1001 &4888773342520730511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57864,6 +57940,7 @@ SceneRoots:
   - {fileID: 1096747188}
   - {fileID: 792503241}
   - {fileID: 79497492}
+  - {fileID: 1284378713854026256}
   - {fileID: 1056057734}
   - {fileID: 194417468}
   - {fileID: 1511578583}
