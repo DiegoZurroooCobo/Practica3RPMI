@@ -45,11 +45,12 @@ public class EnemyMovement : MonoBehaviour
         currentTime += Time.deltaTime;
         if (currentTime >= MaxTime) 
         {
-            MaxTime = 3f;
+            MaxTime = 10f;
             GameObject trapBall = Instantiate(TrapBall, new Vector2( Random.Range(transform.position.x - 3, transform.position.x + 3), transform.position.y), Quaternion.identity);
-            trapBall.GetComponent<TrapBall>().dir.x = Random.Range(-3 , 3);
+            //trapBall.GetComponent<TrapBall>().dir.x = Random.Range(-3 , 3);
             currentTime = 0;
         }
+
     }
 
     void Movement()
@@ -74,6 +75,7 @@ public class EnemyMovement : MonoBehaviour
             AudioManager.instance.PlayAudio(deathClip, "deathClip");
             // Destroy(gameObject.transform.parent.gameObject) //Para destruir al padre si el codigo esta en el hijo
         }
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -88,6 +90,5 @@ public class EnemyMovement : MonoBehaviour
             Destroy(gameObject);    //Si colisiona con la Death Zone, se destruye
         }
     }
-
 
 }
